@@ -22,7 +22,7 @@ public class DeliveryCardTest {
 
         open("http://localhost:9999/");
         $("[data-test-id='city'] input").setValue("Москва");
-        String planningDate = generateDate(1, "dd.MM.yyyy");
+        String planningDate = generateDate(5, "dd.MM.yyyy");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
         $("[data-test-id='date'] input").setValue(planningDate);
         $("[data-test-id='name'] input").setValue("Скворцов-Степанов Иван");
